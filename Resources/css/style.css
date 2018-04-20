@@ -1,41 +1,32 @@
-* {
-  border: 1px solid black
-}
+/* CSS File for My Times Project */
+
+
+/* Styling Header */
 
 header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  top: 0;
+  z-index: 10;
   width: 100%;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  background-color: white;
   border-bottom: 1px solid black;
-}
-
-h1 {
-  color: MediumAquamarine;
-  font-family: Verdana;
-  font-size: 14px;
-}
-
-h3 {
-
+  max-width: 1200px;
 }
 
 a {
   color: black;
 }
 
-p {
-  font-family: Georgia;
-  font-size: 17px;
-  color: black;
-}
-
-nav.headerItem {
-  margin-right: 15px;
-  flex-wrap: wrap;
+h1.logoItem {
+  color: MediumAquamarine;
+  font-family: Verdana;
+  font-size: 14px;
 }
 
 img.logoItem {
@@ -45,6 +36,8 @@ img.logoItem {
 .headerItem {
   display: inline-flex;
   align-items: center;
+  margin-right: 15px;
+  flex-wrap: wrap;
 }
 
 .navLink {
@@ -52,26 +45,54 @@ img.logoItem {
   margin: 10px 15px;
 }
 
+/* Styling Main Content Area*/
+
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
 .main {
+  position: relative;
+  top: 100px;
   display: flex;
+  width: 1200px;
 }
 
 .column {
   display: inline-flex;
-  flex-direction: column;
   margin: 10px 5px;
 }
 
 .column.large {
   width: 630px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .column.medium {
   width: 300px;
+  flex-direction: column;
 }
 
 .column.small {
   width: 240px;
+  flex-direction: column;
+}
+
+.article {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.article.fullWidth {
+  width: 100%;
+}
+
+.article.halfWidth {
+  width: 48%;
 }
 
 .autoImage {
@@ -81,13 +102,13 @@ img.logoItem {
 .backgroundImage {
   display: inline-flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-content: center;
   height: 300px;
 }
 
 
-h3.background {
+h3.imageHeadline {
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
@@ -96,10 +117,30 @@ h3.background {
   margin: 0 auto;
 }
 
+h2.newsBite {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+div.newsBite {
+  background-color: WhiteSmoke;
+  border-bottom: 1px solid black;
+}
+
+.newsBite p{
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  padding-left: 30px;
+}
+
 #mainHeadline {
   font-size: 40px;
   text-align: left;
 }
+
+/* IDs to insert Background Images */
 
 #img-story-main {
   background-image: url("../Images/img-story-main.png");
@@ -115,4 +156,30 @@ h3.background {
 
 #img-story-3 {
   background-image: url("../Images/img-story-3.png");
+}
+
+/* Footer Styling */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 300px;
+}
+
+.footerTitle {
+  display: inline-block;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 3px solid white;
+  padding-right: 30px;
 }

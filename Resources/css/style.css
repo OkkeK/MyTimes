@@ -2,12 +2,6 @@
 
 /* Styling Header */
 
-/* body {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-} */
-
 header {
   position: fixed;
   display: flex;
@@ -38,11 +32,18 @@ img.logoItem {
   padding: 15px 15px;
 }
 
-.headerItem {
+.navBar {
   display: inline-flex;
   align-items: center;
   margin-right: 15px;
   flex-wrap: wrap;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  width: 300px;
 }
 
 .navLink {

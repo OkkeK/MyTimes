@@ -43,7 +43,7 @@ img.logoItem {
   display: inline-flex;
   align-items: center;
   margin-right: 15px;
-  width: 300px;
+  flex-basis: 300px;
 }
 
 .navLink {
